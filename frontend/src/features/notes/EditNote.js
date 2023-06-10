@@ -1,14 +1,11 @@
 import { useParams } from 'react-router-dom'
 import PulseLoader from 'react-spinners/PulseLoader'
 import useAuth from '../../hooks/useAuth'
-import useTitle from '../../hooks/useTitle'
 import { useGetUsersQuery } from '../users/usersApiSlice'
 import EditNoteForm from './EditNoteForm'
 import { useGetNotesQuery } from './notesApiSlice'
 
 const EditNote = () => {
-  useTitle('techNotes: Edit Note')
-
   const { id } = useParams()
 
   const { username, isManager, isAdmin } = useAuth()
