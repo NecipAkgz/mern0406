@@ -1,6 +1,6 @@
 const allowedOrigins = [
   'http://localhost:3000',
-  'https://toolbox.necipakgoz.dev',
+  'https://mern0406.onrender.com/',
 ]
 
 module.exports = allowedOrigins
