@@ -1,6 +1,6 @@
 import PulseLoader from 'react-spinners/PulseLoader'
+import { useGetUsersQuery } from '../users/usersApiSlice'
 import NewNoteForm from './NewNoteForm'
-import { useGetUsersQuery } from './usersApiSlice'
 
 const NewNote = () => {
   const { users } = useGetUsersQuery('userList', {
